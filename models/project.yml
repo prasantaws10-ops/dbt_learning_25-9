@@ -1,0 +1,16 @@
+# continue to be built as views. These settings can be overridden in the individual model files
+# using the {{ config(...) }} macro.
+
+models:
+  my_new_project:
+    # Applies to all files under models/example/
+    raw:
+      +materialized: table
+      +database: DBT_LAB
+      +schema: RAW_SCHEMA
+      +query_tag: DBT2
+      +transient: false
+
+    silver:
+      +materialized: view
+      +database: DBT_LABS_SILVER
