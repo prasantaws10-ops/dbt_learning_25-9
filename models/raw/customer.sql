@@ -2,8 +2,8 @@
     config(
         materialized='table',
         query_tag='DBT',
-        database= 'DB2_LAB',
-        schema='RAW_SCHEMA'
+        --database= 'DB2_LAB',
+        --schema='RAW_SCHEMA'
     )
 }}
 
