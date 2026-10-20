@@ -1,15 +1,4 @@
 version: 2
 
-sources:
-  name: raw_data
-  schema: SF_SCHEMA
-  database: snowflake_dbt_data
-  tables:
 
-  name: cust
-  identifier: CUSTOMER
-
-  name: prod_data
-  schema: PROD_SCH
-  database: snowflake_dbt_data
 
